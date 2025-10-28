@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <title>Portfolio - N.Rakesh</title>
+</head>
+<body>
+    <div class="navbar">
+        <div id="name">
+            <p>N.Rakesh</p>
+        </div>
+        <div class="details">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <section id="about" class="section">
+        <div>
+            <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="John Doe" class="profile-img">
+        </div>
+        <div class="details2">
+            <p>Hello,I'm</p>
+            <p class="name2">N.Rakesh</p>
+            <p class="prof">Python Developer</p>
+            <div class="socials">
+                <a href="https://github.com/Rakesh73971/" target="_blank" rel="noreferrer"><img src="{{ url_for('static', filename='images/git.jpeg') }}" class="github" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/rakesh630/" target="_blank" rel="noreferrer"><img src="{{ url_for('static', filename='images/linkedin.jpeg') }}" class="github" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section section-col">
+        <h2>Experience</h2>
+        <ul class="list">
+            <li><strong>Python Developer Intern</strong> - Worked on data scraping, automation, and REST APIs.</li>
+            <li><strong>Education</strong> -  B.Tech(CSE).</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="section section-col">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h3>Frontend</h3>
+                <ul class="list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Backend</h3>
+                <ul class="list">
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Flask</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section section-col">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>E-commerce Platform</h3>
+                <p>Product listing, cart, checkout and order tracking.</p>
+            </div>
+            <div class="card">
+                <h3>Marketplace</h3>
+                <p>Multi-vendor listings, search and messaging between buyers and sellers.</p>
+            </div>
+            <div class="card">
+                <h3>Learning Platform</h3>
+                <p>Course catalog, enrollments, progress tracking, and quizzes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-col">
+        <h2>Contact</h2>
+        <div class="contact-row">
+            <a class="contact-item" href="mailto:nraki522@gmail.com">
+                <span class="contact-icon">📧</span>
+                <span>nraki522@gmail.com</span>
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/rakesh630" target="_blank" rel="noreferrer">
+                <img class="contact-img" src="{{ url_for('static', filename='images/linkedin.jpeg') }}" alt="LinkedIn">
+                <span>linkedin.com</span>
+            </a>
+            <a class="contact-item" href="https://github.com/Rakesh73971/" target="_blank" rel="noreferrer">
+                <img class="contact-img" src="{{ url_for('static', filename='images/git.jpeg') }}" alt="GitHub">
+                <span>github.com</span>
+            </a>
+        </div>
+    </section>
+    
+</body>
+</html>
