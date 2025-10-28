@@ -2,7 +2,7 @@
 
 # 🌐 Single Page Portfolio Website
 
-A clean, responsive **single-page portfolio website** built using **HTML, CSS, and JavaScript (with Flask integration)**.
+A clean, responsive **single-page portfolio website** built using **HTML, CSS, (with Flask integration)**.
 This project showcases personal information, skills, projects, and contact details — all in one elegant, scrollable page.
 
 ---
@@ -10,7 +10,6 @@ This project showcases personal information, skills, projects, and contact detai
 ## 🚀 Features
 
 * **Single Page Design:** Smooth scrolling sections for About, Skills, Projects, and Contact.
-* **Responsive Layout:** Works seamlessly on desktop, tablet, and mobile screens.
 * **Flask Backend Integration:** Serve your portfolio dynamically using Flask.
 * **Customizable Content:** Easily update name, projects, and links.
 * **Clean UI/UX:** Simple, elegant, and professional interface.
